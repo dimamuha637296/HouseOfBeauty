@@ -22,56 +22,7 @@ body{
     background-color: #000;
     overflow: auto;
 }
-.logo{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    min-height: 100%;
-    z-index: 2;
-    opacity: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 200px auto;
-    background-attachment: fixed;
-    -webkit-transition: all 0.3s 0.3s;
-    -moz-transition: all 0.3s 0.3s;
-    -o-transition: all 0.3s 0.3s;
-    transition: all 0.3s 0.3s;
-    padding-bottom: 50px;
-}
-.active .logo{ 
-    opacity: 1;
-}
-.bottom{
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
-    background-color: #0e0e0e;
-    text-align: right;
-    padding: 5px 20px;
-}
-.bottom span{
-    font-size: 14px;
-    line-height: 24px;
-    color: #bababa;
-}
-.bottom a{
-    color: #bababa;
-    margin-left: 5px;
-    text-decoration: none;
-    font-size: 18px;
-}
-.bottom a:hover{
-    color: #fff;
-}
-.bottom span + span{
-    margin-left: 20px;
-}
-.bottom .left{
-    float:left;
-}
+
 h1,h2,h3,h4,h5,h6,span,b,strong{
     color:#aeaeae;
     margin: 0px;
@@ -93,6 +44,9 @@ h5 + *,
 h6 + *{
     margin-top: 10px !important;
     display: block;
+}
+.block h1:first-child {
+    margin-top: 30px;
 }
 .links{
     padding-top: 20px;
@@ -137,18 +91,6 @@ ul li a:hover:before{
 }
 
 @media (max-width: 768px){
-    .logo{
-        padding-top: 80px;
-        background-position: 20px 20px;
-        background-size: 100px;
-        padding-bottom: 100px;
-        height: auto;
-        min-height: 100vh;
-        -webkit-transition: all 1s;
-        -moz-transition: all 1s;
-        -o-transition: all 1s;
-        transition: all 1s;
-    }
     ul{
         padding-left: 10px
     }
